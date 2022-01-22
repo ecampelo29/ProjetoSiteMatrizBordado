@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/header.css">
+
     <title>M-Bordados</title>
 </head>
-    <header>
-        <div>
-            <img src="./imagens/Embroidery Tools.svg" alt="Logo da M-Bordados">
-            <h1>M-Bordados</h1>
-            <form class="example" action="action_page.php">
-                <input type="text" placeholder="Busque..." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+    <header class="cabecalho">
+        <section class="cabecalho__utilidades" >
+            <div class="cabecalho__utilidades__logo">
+                <img class="cabecalho__utilidades__logo_img" src="./imagens/Embroidery Tools.svg" alt="Logo da M-Bordados">
+                <h1 class="cabecalho__utilidades__logo__titulo">M-Bordados</h1>
+            </div>
+            <form class="cabecalho__utilidades__busca" action="action_page.php">
+                <input class="cabecalho__utilidades__busca_input" type="text" placeholder="Busque..." > 
+                <button type="submit"><i class="fa fa-search cabecalho__utilidades__busca__button"></i></button>
             </form>
-            <a href="#"><i class="fa fa-fw fa-user"></i>Sua Conta</a>
-            
-            <a href="#"> <img src="./imagens/carrinho.jpg" alt="Ícone do carrinho"> Carrinho</a>
-        </div>
-        <nav>
-            <li><a href="#">Pedidos</a></li>
-            <li><a href="#">Novidades</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Gratis</a></li>
+            <div class="cabecalho__utilidades__links" >
+                <a class="cabecalho__utilidades__conta" href="#"><i class="fa fa-fw fa-user"></i>Sua Conta</a>
+                
+                <a class="cabecalho__utilidades__carrinho" href="#"><span class="  cabecalho__utilidades__carrinho--img " > </span> <!--img class="cabecalho__utilidades__carrinho_img" src="./imagens/carrinho.jpg" alt="Ícone do carrinho"--> Carrinho</a>
+            </div>
+        </section>
+        <nav class="cabecalho__menu">
+            <li><a class="cabecalho__menu_link" href="#">Pedidos</a></li>
+            <li><a class="cabecalho__menu_link" href="#">Novidades</a></li>
+            <li><a class="cabecalho__menu_link" href="#">Categorias</a></li>
+            <li><a class="cabecalho__menu_link" href="#">Gratis</a></li>
         </nav>
     </header>
 <body>
