@@ -3,39 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
-
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/rodape.css">
     <title>M-Bordados</title>
 </head>
+<body>
     <header class="cabecalho">
         <section class="cabecalho__utilidades" >
             <div class="cabecalho__utilidades__logo">
                 <img class="cabecalho__utilidades__logo_img" src="./imagens/Embroidery Tools.svg" alt="Logo da M-Bordados">
                 <h1 class="cabecalho__utilidades__logo__titulo">M-Bordados</h1>
             </div>
-            <form class="cabecalho__utilidades__busca" action="action_page.php">
+            <form class="cabecalho__utilidades__busca" action="pesquisa.html">
                 <input class="cabecalho__utilidades__busca_input" type="text" placeholder="Busque..." > 
                 <button type="submit"><i class="fa fa-search cabecalho__utilidades__busca__button"></i></button>
             </form>
             <div class="cabecalho__utilidades__links" >
                 <a class="cabecalho__utilidades__conta" href="#"><i class="fa fa-fw fa-user"></i>Sua Conta</a>
                 
-                <a class="cabecalho__utilidades__carrinho" href="#"><span class="  cabecalho__utilidades__carrinho--img " > </span> <!--img class="cabecalho__utilidades__carrinho_img" src="./imagens/carrinho.jpg" alt="Ícone do carrinho"--> Carrinho</a>
+                <a class="cabecalho__utilidades__carrinho" href="#"><span class="  cabecalho__utilidades__carrinho--img " > </span> Carrinho</a>
             </div>
         </section>
-        <nav class="cabecalho__menu">
-            <li><a class="cabecalho__menu_link" href="#">Pedidos</a></li>
-            <li><a class="cabecalho__menu_link" href="#">Novidades</a></li>
-            <li><a class="cabecalho__menu_link" href="#">Categorias</a></li>
-            <li><a class="cabecalho__menu_link" href="#">Gratis</a></li>
+        <nav>
+            <ul class="cabecalho__menu">
+                <li><a class="cabecalho__menu_link" href="#">Pedidos</a></li>
+                <li><a class="cabecalho__menu_link" href="#">Novidades</a></li>
+                <li><a class="cabecalho__menu_link" href="#">Categorias</a></li>
+                <li><a class="cabecalho__menu_link" href="#">Gratis</a></li>
+            </ul>
         </nav>
     </header>
-<body>
-    
+    <main>
+        <section class="teste">
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape__ofertas">
+            <h4 class="rodape__ofertas__titulo">Receba nossas ofertas</h4>
+            <form class="rodape__ofertas__inscricao" action="cadastro_ofertas.html">
+                <input class="rodape__ofertas__input" type="text" placeholder="Seu email..." > 
+                <button type="submit">Assine</button>
+            </form>
+        </div>
+        <nav class="rodape__contato">
+            <h4 class="rodape__contato__titulo">Fale Conosco</h4>
+            <ul class="rodape__contato__lista">
+                <li class="rodape___contato__lista__item"><a href="#">(11)4444-4444</a></li>
+                <li class="rodape___contato__lista__item"><a href="#">(11)94444-4444</a></li>
+                <li class="rodape___contato__lista__item"><a href="#">emailoficial@mbordados.com</a></li>
+            </ul>
+        </nav>
+        <nav class="rodape__conta">
+            <h4 class="rodape__conta__titulo">Sua Conta</h4>
+            <ul class="rodape__conta__lista">
+                <li class="rodape___conta__lista__item"><a href="#">Cadastro</a></li>
+                <li class="rodape___conta__lista__item"><a href="#">Histórico Pedidos</a></li>
+                <li class="rodape___conta__lista__item"><a href="#">Lista de Desejos</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

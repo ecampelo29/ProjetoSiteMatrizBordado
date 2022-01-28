@@ -1,0 +1,10 @@
+:root {
+    --cor-background-corpo: #c06c84;
+    --cor-font-cabecalho: #0c0c0c;
+    --font-oficial: 'Chivo', sans-serif;
+}
+
+.teste {
+    height: 45vh;
+    background-color: var(--cor-background-corpo);
+}

@@ -1,0 +1,21 @@
+
+.rodape {
+    background-color: #355c7d;
+    font-family: var(--font-oficial);
+}
+
+.rodape__ofertas {
+    background-color : #6c5878; 
+    padding: 0.5rem;
+}
+
+.rodape__ofertas__titulo {
+    font-size: 0.8rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.rodape__ofertas__inscricao {
+    display: flex;
+    
+}
