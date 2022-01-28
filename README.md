@@ -12,3 +12,8 @@ Hora de fixar tudo o que foi visto nos cursos sobre o assunto.
 **Primeira versão do header para celulares:**
 
 ![image](https://user-images.githubusercontent.com/63076222/150642197-9ac382c1-bbbf-4211-8778-126ff294542c.png)
+
+**Iniciando o rodapé**
+
+![image](https://user-images.githubusercontent.com/63076222/151559002-b314e074-b3f3-4863-8441-e00835d2afd9.png)
+
