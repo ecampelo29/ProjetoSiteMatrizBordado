@@ -13,7 +13,7 @@ Hora de fixar tudo o que foi visto nos cursos sobre o assunto.
 
 ![image](https://user-images.githubusercontent.com/63076222/150642197-9ac382c1-bbbf-4211-8778-126ff294542c.png)
 
-**Iniciando o rodapé**
+**Primeira versão do rodapé**
 
-![image](https://user-images.githubusercontent.com/63076222/151559002-b314e074-b3f3-4863-8441-e00835d2afd9.png)
+![image](https://user-images.githubusercontent.com/63076222/151665991-b2297295-cf5b-4bc2-842b-af74def388d7.png)
 
