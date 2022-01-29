@@ -1,21 +1,96 @@
 
 .rodape {
     background-color: #355c7d;
-    font-family: var(--font-oficial);
+    font-family: var(--font-oficial); 
+    color: var(--cor-font-oficial);   
 }
 
 .rodape__ofertas {
     background-color : #6c5878; 
-    padding: 0.5rem;
+    margin-bottom: 0.7rem;
+    padding: 1rem 0.5rem;  
 }
 
 .rodape__ofertas__titulo {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-bottom: .5rem;
     text-align: center;
 }
 
 .rodape__ofertas__inscricao {
     display: flex;
-    
+    margin:  auto ;
+    justify-content:center;    
+}
+
+.rodape__ofertas__input {
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.rodape__ofertas__botao {
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px 20px;
+}
+.rodape__ofertas__botao:hover {
+    background-color: var(--cor-background-corpo);
+}
+
+.rodape__conta {
+    padding: 0.2rem;
+}
+.rodape__conta__titulo {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.rodape__conta__lista{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+}
+
+.rodape___conta__lista__link {
+    color: var(--cor-font-oficial);
+}
+
+.rodape__contato {
+    padding-bottom: 0.5rem;
+}
+
+.rodape__contato__titulo {    
+    font-size: 0.9rem;  
+    text-align: center;  
+
+}
+
+.rodape__contato__lista {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    line-height: 1.5rem ;
+}
+
+.rodape___contato__lista__link{
+    align-items: center;
+    color: var(--cor-font-oficial);
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.rodape__contato__logo{
+    height: 0.8rem;
+    padding-right: 2px;
+}
+
+.rodape__social {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+
+.rodape__social__logo{
+    height: 2rem;
 }
