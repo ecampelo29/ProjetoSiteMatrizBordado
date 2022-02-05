@@ -23,14 +23,26 @@
 }
 
 .cabecalho__utilidades__busca {
+    display: flex;
+    justify-content:center; 
     margin: 1.0rem 0rem;    
-    
 }
 
 .cabecalho__utilidades__busca_input {
-    width: 90%;
-    
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 70%;
+}    
+
+.cabecalho__utilidades__busca__botao {
+    border: none ;
+    border-radius: 0px 5px 5px 0px ;
+    padding: 10px 20px;
 }
+.cabecalho__utilidades__busca__botao:hover {
+    background-color: var(--cor-background-corpo);
+}
+
 .cabecalho__utilidades__links {
     align-items: center;
     display: flex;
