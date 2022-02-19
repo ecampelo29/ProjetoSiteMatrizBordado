@@ -1,18 +1,20 @@
 .cartao {   
-    border-style: solid;
-    border-radius: 5px;
-    color: var(--cor-font-oficial);
-    font-family: var(--font-oficial);
     background-color: var(--tom-cor-dois);
+    border: 1px  solid var(--tom-cor-quatro);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 0 var(--tom-cor-quatro);
+    color: var(--cor-font-oficial);
     display: flex;
     flex-flow: column;
+    font-family: var(--font-oficial);
     margin: 0.8rem 0rem ;
-    width: 48%;
-    
+    padding-bottom: 0.5rem;
+    width: 48%;    
 }
 
 .cartao__img {
-    height: 10rem;
+    border-radius: 5px 5px 0px 0px;
+    height: 8rem;
     width: 100%;
 }
 
@@ -28,6 +30,34 @@
 }
 .cartao__precos {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;  
+}
+
+.cartao__preco--antigo {
+    color: #4d4b4b;
+    text-decoration: line-through;
+}
+
+.cartao__botoes {
+    display:  flex;
+    height: 2.5rem;
+    justify-content: space-around;
+}
+
+.cartao__favorito {
+    border : none;
+    border-radius: 5px;
+}
+.cartao__favorito:hover {
+    background-color: var(--tom-cor-tres);
+}
+
+.cartao__carrinho { 
+    border : none;
+    border-radius: 5px;
+    width: 72%;
+}
+
+.cartao__carrinho:hover {
+    background-color: var(--tom-cor-tres);
 }
