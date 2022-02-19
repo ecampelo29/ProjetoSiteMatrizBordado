@@ -1,12 +1,12 @@
 
 .rodape {
-    background-color: #355c7d;
+    background-color: var(--tom-cor-cinco);;
     font-family: var(--font-oficial); 
     color: var(--cor-font-oficial);   
 }
 
 .rodape__ofertas {
-    background-color : #6c5878; 
+    background-color : var(--tom-cor-quatro);; 
     margin-bottom: 0.7rem;
     padding: 1rem 0.5rem;  
 }
@@ -34,7 +34,7 @@
     padding: 10px 20px;
 }
 .rodape__ofertas__botao:hover {
-    background-color: var(--cor-background-corpo);
+    background-color: var(--tom-cor-tres);
 }
 
 .rodape__conta {

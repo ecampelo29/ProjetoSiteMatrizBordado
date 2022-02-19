@@ -1,10 +1,20 @@
 :root {
-    --cor-background-corpo: #c06c84;
+    --tom-cor-um: #f8b195;
+    --tom-cor-dois: #f67280;
+    --tom-cor-tres: #c06c84;
+    --tom-cor-quatro: #6c5b7b;
+    --tom-cor-cinco: #355c7d;
     --cor-font-oficial: #0c0c0c;
     --font-oficial: 'Chivo', sans-serif;
 }
 
-.teste {
-    height: 40vh;
-    background-color: var(--cor-background-corpo);
+.matrizes {
+        padding: 0.5rem 0.5rem;
+        background-color: var(--tom-cor-tres);;
+}
+
+.matrizes__cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

@@ -1,6 +1,6 @@
 
 .cabecalho {
-    background-color: #f8b195;
+    background-color: var(--tom-cor-um);
 }
 .cabecalho__utilidades {    
     padding: 1rem 0.5rem;
@@ -40,7 +40,7 @@
     padding: 10px 20px;
 }
 .cabecalho__utilidades__busca__botao:hover {
-    background-color: var(--cor-background-corpo);
+    background-color: var(--tom-cor-tres);
 }
 
 .cabecalho__utilidades__links {
@@ -73,7 +73,7 @@
 }
 
 .cabecalho__menu {
-    background-color: #f67280;    
+    background-color: var(--tom-cor-dois);;    
     display: flex;
     height: 3rem;
     padding: 1rem 0rem;

@@ -1,0 +1,33 @@
+.cartao {   
+    border-style: solid;
+    border-radius: 5px;
+    color: var(--cor-font-oficial);
+    font-family: var(--font-oficial);
+    background-color: var(--tom-cor-dois);
+    display: flex;
+    flex-flow: column;
+    margin: 0.8rem 0rem ;
+    width: 48%;
+    
+}
+
+.cartao__img {
+    height: 10rem;
+    width: 100%;
+}
+
+.cartao__conteudo{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao_titulo {
+    color: var(--cor-font-oficial);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+.cartao__precos {
+    display: flex;
+    justify-content: space-between;
+    
+}
