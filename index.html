@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/cartoes.css">
     <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <title>M-Bordados</title>
 </head>
 <body>
@@ -43,8 +44,8 @@
     <main>
         <section class="matrizes">
             <!--matrizes serão populadas automaticamente no futuro-->
-            <ul class="matrizes__cartoes">
-                <li class="cartao">
+            <ul class="matrizes__cartoes" data-cartoes>
+               <!-- <li class="cartao">
                 <a href="#"><img src="./imagens/matriz1.jpg" alt="descrição matriz 1" class="cartao__img"></a>
                 <article class="cartao__conteudo"> 
                     <a href="#"><h4 class="cartao_titulo">Matriz 1</h4></a>
@@ -99,7 +100,7 @@
                             <button class="cartao__carrinho" type="submit">Adicionar<i class="fa fa-fw fa-cart-plus"></i></button>
                         </div>
                     </article>
-                </li>
+                </li> -->
             </ul>
 
         </section>
@@ -135,4 +136,5 @@
         </ul>
     </footer>
 </body>
+<script type="module" src="./scripts/Controllers/listaMatrizes.js"></script>
 </html>
