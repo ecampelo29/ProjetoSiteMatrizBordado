@@ -3,18 +3,18 @@
 import { matrizService } from "../Service/cliente-service.js";
 
 
-const criaNovoCartao = (nome) => {
+const criaNovoCartao = (imagem, nome, preco_antigo, preco_atual) => {
     /* função que cria um novo cartão com os dados da matriz */
     const novoCartao = document.createElement ('li')
     novoCartao.className = 'cartao'
     const conteudo = 
             `
-            <a href="#"><img src="./imagens/matriz1.jpg" alt="descrição matriz 1" class="cartao__img"></a>
+            <a href="#"><img src=${imagem} alt="descrição matriz 1" class="cartao__img"></a>
             <article class="cartao__conteudo"> 
                 <a href="#"><h4 class="cartao_titulo">${nome}</h4></a>
                 <div class="cartao__precos">
-                    <p class="cartao__preco--antigo">R$ 10,00</p>
-                    <p class="cartao__preco--atual">R$ 8,00</p>
+                    <p class="cartao__preco--antigo">R$ ${preco_antigo}</p>
+                    <p class="cartao__preco--atual">R$ ${preco_atual}</p>
                 </div>
                 <div class="cartao__botoes">
                     <button class="cartao__favorito" type="submit" ><i class="fa fa-fw fa-heart"></i></button>
@@ -35,8 +35,7 @@ const renderizaCartoes = async () => {
     try {
         const listarMatrizes = await matrizService.listaMatrizes()
         listarMatrizes.forEach(matriz => {
-            console.log(matriz.primeiro_nome)
-            listaDeCartoes.appendChild(criaNovoCartao(matriz.primeiro_nome))
+            listaDeCartoes.appendChild(criaNovoCartao(matriz.image_location, matriz.name, matriz.last_price, matriz.actual_price))
         });
     }
     catch (erro){

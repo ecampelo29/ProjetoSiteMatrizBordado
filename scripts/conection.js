@@ -5,22 +5,7 @@ const client = new Client ({
     port: 5432,
     user: 'mbordados',
     password: 'mbordados',
-    database: 'ALURA'
+    database: 'mbordados'
 })
 
 module.exports = client
-
-
-/* client.connect()
-
-client.query(`select * from aluno;`, (err, resp)=>{
-    if(err){
-        console.log("Erro: " + err.message);
-    } else {
-        console.log(resp.rows)
-    }
-    
-})
-
-client.end;
-*/
