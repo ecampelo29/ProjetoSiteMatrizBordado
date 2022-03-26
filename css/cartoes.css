@@ -61,3 +61,15 @@
 .cartao__carrinho:hover {
     background-color: var(--tom-cor-tres);
 }
+
+@media screen and (min-width: 768px) {
+   .cartao {
+       width: 28%;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+    .cartao {
+        width: 20%;
+    }
+ }

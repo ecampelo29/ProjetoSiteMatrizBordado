@@ -8,31 +8,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/cartoes.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <title>M-Bordados</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <section class="cabecalho__utilidades" >
-            <div class="cabecalho__utilidades__logo">
-                <img class="cabecalho__utilidades__logo_img" src="./imagens/Embroidery Tools.svg" alt="Logo da M-Bordados">
-                <h1 class="cabecalho__utilidades__logo__titulo">M-Bordados</h1>
-            </div>
-            <form class="cabecalho__utilidades__busca" action="pesquisa.html">
-                <input class="cabecalho__utilidades__busca_input" type="text" placeholder="Busque..." > 
-                <button class="cabecalho__utilidades__busca__botao" type="submit"><i class="fa fa-search "></i></button>
-            </form>
-            <div class="cabecalho__utilidades__links" >
-                <a class="cabecalho__utilidades__conta" href="#"><i class="fa fa-fw fa-user"></i>Sua Conta</a>
-                
-                <a class="cabecalho__utilidades__carrinho" href="#"><span class="  cabecalho__utilidades__carrinho--img " > </span> Carrinho</a>
-            </div>
-        </section>
-        <nav>
+    <header class="cabecalho ">
+        <div class="container">
+            <section class="cabecalho__utilidades" >
+                <div class="cabecalho__utilidades__logo">
+                    <img class="cabecalho__utilidades__logo_img" src="./imagens/Embroidery Tools.svg" alt="Logo da M-Bordados">
+                    <h1 class="cabecalho__utilidades__logo__titulo">M-Bordados</h1>
+                </div>
+                <form class="cabecalho__utilidades__busca" action="pesquisa.html">
+                    <input class="cabecalho__utilidades__busca_input" type="text" placeholder="Busque..." > 
+                    <button class="cabecalho__utilidades__busca__botao" type="submit"><i class="fa fa-search "></i></button>
+                </form>
+                <div class="cabecalho__utilidades__links" >
+                    <a class="cabecalho__utilidades__conta" href="#"><i class="fa fa-fw fa-user"></i>Sua Conta</a>
+                    
+                    <a class="cabecalho__utilidades__carrinho" href="#"><span class="  cabecalho__utilidades__carrinho--img " > </span> Carrinho</a>
+                </div>
+            </section>
+        </div>
+        <nav class="cabecalho__nav container">
             <ul class="cabecalho__menu">
                 <li><a class="cabecalho__menu_link" href="#">Pedidos</a></li>
                 <li><a class="cabecalho__menu_link" href="#">Novidades</a></li>
@@ -41,99 +44,54 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="matrizes">
+    <main class="matrizes container">
+        <section >
             <!--matrizes serão populadas automaticamente no futuro-->
             <ul class="matrizes__cartoes" data-cartoes>
-               <!-- <li class="cartao">
-                <a href="#"><img src="./imagens/matriz1.jpg" alt="descrição matriz 1" class="cartao__img"></a>
-                <article class="cartao__conteudo"> 
-                    <a href="#"><h4 class="cartao_titulo">Matriz 1</h4></a>
-                    <div class="cartao__precos">
-                        <p class="cartao__preco--antigo">R$ 10,00</p>
-                        <p class="cartao__preco--atual">R$ 8,00</p>
-                    </div>
-                    <div class="cartao__botoes">
-                        <button class="cartao__favorito" type="submit" ><i class="fa fa-fw fa-heart"></i></button>
-                        <button class="cartao__carrinho" type="submit">Adicionar<i class="fa fa-fw fa-cart-plus"></i></button>
-                    </div>
-                </article>
-                </li>
-                <li class="cartao">
-                    <a href="#"><img src="./imagens/matriz2.jpg" alt="descrição matriz 2" class="cartao__img"></a>
-                    <article class="cartao__conteudo"> 
-                        <a href="#"><h4 class="cartao_titulo">Matriz 2</h4></a>
-                        <div class="cartao__precos">
-                            <p class="cartao__preco--antigo">R$ 10,00</p>
-                            <p class="cartao__preco--atual">R$ 8,00</p>
-                        </div>
-                        <div class="cartao__botoes">
-                            <button class="cartao__favorito" type="submit" ><i class="fa fa-fw fa-heart"></i></button>
-                            <button class="cartao__carrinho" type="submit">Adicionar<i class="fa fa-fw fa-cart-plus"></i></button>
-                        </div>
-                    </article>
-                </li>
-                <li class="cartao">
-                    <a href="#"><img src="./imagens/matriz3.jpg" alt="descrição matriz 3" class="cartao__img"></a>
-                    <article class="cartao__conteudo"> 
-                        <a href="#"><h4 class="cartao_titulo">Matriz 3</h4></a>
-                        <div class="cartao__precos">
-                            <p class="cartao__preco--antigo">R$ 10,00</p>
-                            <p class="cartao__preco--atual">R$ 8,00</p>
-                        </div>
-                        <div class="cartao__botoes">
-                            <button class="cartao__favorito" type="submit" ><i class="fa fa-fw fa-heart"></i></button>
-                            <button class="cartao__carrinho" type="submit">Adicionar<i class="fa fa-fw fa-cart-plus"></i></button>
-                        </div>
-                    </article>
-                </li>
-                <li class="cartao">
-                    <a href="#"><img src="./imagens/matriz4.jpg" alt="descrição matriz 4" class="cartao__img"></a>
-                    <article class="cartao__conteudo"> 
-                        <a href="#"><h4 class="cartao_titulo">Matriz 4</h4></a>
-                        <div class="cartao__precos">
-                            <p class="cartao__preco--antigo">R$ 10,00</p>
-                            <p class="cartao__preco--atual">R$ 8,00</p>
-                        </div>
-                        <div class="cartao__botoes">
-                            <button class="cartao__favorito" type="submit" ><i class="fa fa-fw fa-heart"></i></button>
-                            <button class="cartao__carrinho" type="submit">Adicionar<i class="fa fa-fw fa-cart-plus"></i></button>
-                        </div>
-                    </article>
-                </li> -->
+               <!--
+                   cartões são inseridos automaticamente
+                   -->
             </ul>
 
         </section>
     </main>
     <footer class="rodape">
-        <div class="rodape__ofertas">
+        <div class="container rodape__ofertas   ">
             <h4 class="rodape__ofertas__titulo">Receba nossas ofertas</h4>
             <form class="rodape__ofertas__inscricao" action="cadastro_ofertas.html">
                 <input class="rodape__ofertas__input" type="email" placeholder="Seu email..." > 
                 <button class="rodape__ofertas__botao" type="submit">Assine</button>
             </form>
         </div>
-        <nav class="rodape__conta">
-            <h4 class="rodape__conta__titulo">Sua Conta</h4>
-            <ul class="rodape__conta__lista">
-                <li><a class="rodape___conta__lista__link" href="#">Cadastro</a></li>
-                <li><a class="rodape___conta__lista__link" href="#">Histórico Pedidos</a></li>
-                <li><a class="rodape___conta__lista__link" href="#">Lista de Desejos</a></li>
-            </ul>
-        </nav>
-        <nav class="rodape__contato">
-            <h4 class="rodape__contato__titulo">Fale Conosco</h4>
-            <ul class="rodape__contato__lista">
-                <li><a class="rodape___contato__lista__link" href="#"><img class="rodape__contato__logo" src="./imagens/phone.svg" alt="Ícone de telfone">  (11) 4444-4444</a></li>
-                <li><a class="rodape___contato__lista__link" href="#"><img class="rodape__contato__logo" src="./imagens/cellphone.svg" alt="Ícone de celular">  (11) 94444-4444</a></li>
-                <li><a class="rodape___contato__lista__link" href="mailto:emailoficial@mbordados.com"><img class="rodape__contato__logo" src="./imagens/letter.svg" alt="Ícone de correspondência">  emailoficial@mbordados.com</a></li>
-            </ul>
-        </nav>
-        <ul class="rodape__social">
-            <li><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/facebook.svg" alt="Ícone do Facebook"></li>
-            <li><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/twitter.svg" alt="Ícone do Twitter"></li>
-            <li><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/instagram.svg" alt="Ícone do instagram"></li>
-        </ul>
+        <div class="container">
+            <section class="rodape__utilitarios">
+                <nav class="rodape__conta">
+                    <h4 class="rodape__conta__titulo">Sua Conta</h4>
+                    <ul class="rodape__conta__lista">
+                        <li><a class="rodape___conta__lista__link" href="#">Cadastro</a></li>
+                        <li><a class="rodape___conta__lista__link" href="#">Histórico Pedidos</a></li>
+                        <li><a class="rodape___conta__lista__link" href="#">Lista de Desejos</a></li>
+                    </ul>
+                </nav>
+                <nav class="rodape__contato">
+                    <h4 class="rodape__contato__titulo">Fale Conosco</h4>
+                    <ul class="rodape__contato__lista">
+                        <li><a class="rodape___contato__lista__link" href="#"><img class="rodape__contato__logo" src="./imagens/phone.svg" alt="Ícone de telfone">  (11) 4444-4444</a></li>
+                        <li><a class="rodape___contato__lista__link" href="#"><img class="rodape__contato__logo" src="./imagens/cellphone.svg" alt="Ícone de celular">  (11) 94444-4444</a></li>
+                        <li><a class="rodape___contato__lista__link" href="mailto:emailoficial@mbordados.com"><img class="rodape__contato__logo" src="./imagens/letter.svg" alt="Ícone de correspondência">  emailoficial@mbordados.com</a></li>
+                    </ul>
+                </nav>
+                <nav class="rodape__contato">
+                    <h4 class="rodape__contato__titulo escondido">Siga-nos</h4>
+                    <ul class="rodape__social">
+                        <li class="rodape__social__lista"><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/facebook.svg" alt="Ícone do Facebook"></li>
+                        <li class="rodape__social__lista"><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/twitter.svg" alt="Ícone do Twitter"></li>
+                        <li class="rodape__social__lista"><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/instagram.svg" alt="Ícone do instagram"></li>
+                        <li class="rodape__social__lista"><a href="#" class="rodape__midia"></a><img class="rodape__social__logo" src="./imagens/pinterest.svg" alt="Ícone do Pinterest"></li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </footer>
 </body>
 <script type="module" src="./scripts/Controllers/listaMatrizes.js"></script>

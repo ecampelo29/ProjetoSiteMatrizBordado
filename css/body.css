@@ -1,0 +1,15 @@
+
+
+
+
+.matrizes {
+    background-color: var(--tom-cor-tres);
+    
+}
+
+.matrizes__cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

@@ -8,13 +8,9 @@
     --font-oficial: 'Chivo', sans-serif;
 }
 
-.matrizes {
-        padding: 0.5rem 0.5rem;
-        background-color: var(--tom-cor-tres);;
-}
-
-.matrizes__cartoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2)!important;
+        padding-right: calc((100% - 940px)/2)!important;
+    }
 }

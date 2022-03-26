@@ -88,9 +88,65 @@
 .rodape__social {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 0.5rem;
 }
 
 .rodape__social__logo{
     height: 2rem;
 }
+
+.escondido {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .rodape__ofertas {       
+        align-items: center;    
+        display: flex;
+        
+    }
+
+    .rodape__ofertas__titulo {
+        margin-bottom: 0;        
+        width: 25%;
+    }
+    .rodape__ofertas__inscricao{
+        width: 70%;
+    }
+
+    .rodape__ofertas__input {
+        width: 100%;
+    }
+
+    .rodape__utilitarios{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rodape__conta{
+        padding: 0rem;
+    }
+
+    .rodape__conta__lista{        
+        align-items: center;
+        flex-flow: column;
+        line-height: 1.5rem ;
+        padding: 0rem;
+    }
+    
+    .rodape__social {
+        flex-wrap: wrap;
+    }
+
+    .rodape__social__lista{
+        padding: 0.1rem 0rem;
+        text-align: center;
+        width: 40%;
+    }
+
+    .escondido {
+        display: block;
+    }
+ }
+
+ 

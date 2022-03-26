@@ -72,8 +72,11 @@
     width: 35px;
 }
 
+.cabecalho__nav {
+    background-color: var(--tom-cor-dois);    
+    
+}
 .cabecalho__menu {
-    background-color: var(--tom-cor-dois);;    
     display: flex;
     height: 3rem;
     padding: 1rem 0rem;
@@ -85,4 +88,42 @@
     color: var(--cor-font-oficial);
     font-family: var(--font-oficial);
 
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .cabecalho__utilidades{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        
+    }
+    
+    .cabecalho__utilidades__busca {
+        margin: 0;
+        width: 70%;
+    }
+    
+    .cabecalho__utilidades__busca_input{
+        width: 100%;
+    }
+    .cabecalho__utilidades__busca__botao{        
+        width: 8rem;
+    }
+    
+    .cabecalho__utilidades__links {
+        padding: 0rem 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho__menu {
+        justify-content: space-between;
+        padding: 1rem 1.2rem;
+        
+    }
 }
