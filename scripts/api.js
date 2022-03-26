@@ -13,7 +13,7 @@ app.listen(3300, ()=>{
 
 // método que publica as matrizes disponíveis no banco 
 app.get('/matrizes', (req, res)=> {
-    client.query(`Select * from designs;`, (err, result)=>{
+    client.query(`select * from designs where availability = True;`, (err, result)=>{
         if(!err){
             res.send(result.rows);
         } else {

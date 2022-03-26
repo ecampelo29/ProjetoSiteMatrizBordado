@@ -1,4 +1,5 @@
 ﻿GRANT ALL PRIVILEGES ON DATABASE mbordados TO mbordados;
+GRANT ALL PRIVILEGES ON table designs TO mbordados;
 
 -- drop table if exists designs;
 -- drop type permitted_categories
@@ -37,4 +38,4 @@ insert into designs (code, category, name, image_location, file_location, descri
 ('Linhas1', 'Linhas', 'Cachorro Sorrindo', '../adm_files/design_images/matriz4.jpg','../adm_files/design_files/Linhas_Cachorro_sorrindo 6x8cm.zip', 'Desenho em linhas sem preenchimento - indicado para máscaras',
  5.00, 6.0, 8.0, True, True);
 
-select * from designs
+select * from designs where availability = True;
