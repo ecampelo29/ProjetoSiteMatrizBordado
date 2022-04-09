@@ -34,14 +34,21 @@ const renderizaCartoes = async () => {
     /* função que renderiza os cartões existentes na página */
     try {
         const listarMatrizes = await matrizService.listaMatrizes()
+        let qtdCartoes = 0
         listarMatrizes.forEach(matriz => {
             listaDeCartoes.appendChild(criaNovoCartao(matriz.image_location, matriz.name, matriz.last_price, matriz.actual_price))
-        });
+            qtdCartoes++
+        })
+        return qtdCartoes;
     }
     catch (erro){
         console.log(erro)
     }
 }
-
 renderizaCartoes()
 
+//const renderizados = renderizaCartoes()
+//let totalMatrizes = renderizados.then((result) => {
+//                return result.toString();    
+//                })
+//console.log('Total matrizes: ', totalMatrizes)

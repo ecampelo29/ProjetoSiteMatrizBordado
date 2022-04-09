@@ -17,6 +17,10 @@
     font-family: 'Satisfy', cursive;
     padding-left: 0.5rem;
 }
+.cabecalho__utilidades__logo__titulo-link {
+    text-decoration: none;
+    color: black;
+}
 
 .cabecalho__utilidades__logo_img {
     height: 50px;
@@ -121,9 +125,27 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .cabecalho__utilidades {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 0.5rem 0.5rem;
+    }
+
     .cabecalho__menu {
         justify-content: space-between;
         padding: 1rem 1.2rem;
-        
+    }
+
+    .cabecalho__utilidades__logo {
+        margin-bottom: 0px;
+    }
+
+    .cabecalho__utilidades__busca {
+        width: 50%;
+    }
+
+    .cabecalho__utilidades__links {
+        padding: 0rem 0px;
+        width: 25%;
     }
 }
