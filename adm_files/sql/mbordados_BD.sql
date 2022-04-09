@@ -39,3 +39,9 @@ insert into designs (code, category, name, image_location, file_location, descri
  5.00, 6.0, 8.0, True, True);
 
 select * from designs where availability = True;
+
+/**carregando arquivo csv com vários exemplos**/
+
+copy designs (code, category, name, image_location, file_location, description, last_price, 
+			actual_price, height, width, availability, offer) from '/home/ecampelo/Documentos/Projetos/Site Matriz Bordado/ProjetoSiteMatrizBordado/adm_files/designs_multiplicado.csv' WITH (DELIMITER ',', FORMAT CSV, HEADER TRUE);
+			

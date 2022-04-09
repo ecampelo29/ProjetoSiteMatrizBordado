@@ -1,0 +1,5 @@
+"design_id";"code";"category";"name";"image_location";"file_location";"description";"last_price";"actual_price";"height";"width";"measure";"availability";"offer";"creation_date"
+1;"Art1";"Arte";"Arara";"../adm_files/design_images/matriz1.jpg";"../adm_files/design_files/Arte_Arara_vermelha 13x18cm.zip";"Arara Voando - indicada para camisetas ou toalhas";0.00;8.00;13;18;"cm";t;f;"2022-03-19 15:18:55.882345"
+2;"Art2";"Arte";"Borboleta";"../adm_files/design_images/matriz3.jpg";"../adm_files/design_files/Arte_Borboleta Amarela 13x18cm.zip";"Borboleta com asa abertas - indicada para quadros";0.00;10.00;13;18;"cm";t;f;"2022-03-19 15:18:55.882345"
+3;"Barra1";"Barras";"Barrinha Copas";"../adm_files/design_images/matriz2.jpg";"../adm_files/design_files/Barrinha Copas 20x10cm.zip";"Porta Copo Copas - repouso de copo temático";0.00;5.00;20;10;"cm";t;t;"2022-03-19 15:18:55.882345"
+4;"Linhas1";"Linhas";"Cachorro Sorrindo";"../adm_files/design_images/matriz4.jpg";"../adm_files/design_files/Linhas_Cachorro_sorrindo 6x8cm.zip";"Desenho em linhas sem preenchimento - indicado para máscaras";0.00;5.00;6;8;"cm";t;t;"2022-03-19 15:18:55.882345"
