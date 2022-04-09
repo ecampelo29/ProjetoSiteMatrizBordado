@@ -20,3 +20,12 @@ Hora de fixar tudo o que foi visto nos cursos sobre o assunto.
 **Versão base dos cartões das matrizes**
 
 ![image](https://user-images.githubusercontent.com/63076222/154812354-a25a5243-2870-4789-bda0-6263f7c6bca4.png)
+
+**Versão 768px
+
+![image](https://user-images.githubusercontent.com/63076222/160248975-d2a8b1d9-f0cb-4709-9d38-541ca77bf9a8.png)
+
+**Versão 1024px
+
+![image](https://user-images.githubusercontent.com/63076222/160249028-259228ec-c11c-4764-944b-ea4bf0d969a8.png)
+
