@@ -13,3 +13,23 @@
     justify-content: space-around;
 }
 
+.matrizes__paginacao_lista {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+.matrizes__paginacao__lista__pagina {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+.matrizes__paginacao__lista__pagina-ativo {
+        background-color: blue;
+        color: white;
+    }
+    
+.matrizes__paginacao__lista__pagina:hover:not(.active) {
+        background-color: #ddd;}  
