@@ -6,6 +6,7 @@
     --tom-cor-cinco: #355c7d;
     --cor-font-oficial: #0c0c0c;
     --font-oficial: 'Chivo', sans-serif;
+    --animation-duration: .2s;
 }
 
 @media screen and (min-width: 1024px) {

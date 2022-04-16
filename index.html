@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/cartoes.css">
+    <link rel="stylesheet" href="./css/pagina.css">
+    <link rel="stylesheet" href="./css/paginacao.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <title>M-Bordados</title>
@@ -45,12 +47,15 @@
         </nav>
     </header>
     <main class="matrizes container">
-        <section >
-            <!--matrizes serão populadas automaticamente no futuro-->
+        <section id="listagemDeCartoes" >
+            <!--matrizes serão populadas automaticamente no futuro
             <ul class="matrizes__cartoes" data-cartoes>
-               <!--
+               
                    cartões são inseridos automaticamente
-                   -->
+                </ul>
+            -->
+            <ul class="matrizes__cartoes_paginacao matrizes__cartoes_paginacao--inativo" id="paginacao">
+                
             </ul>
 
         </section>
@@ -95,4 +100,5 @@
     </footer>
 </body>
 <script type="module" src="./scripts/Controllers/listaMatrizes.js"></script>
+<script type="module" src="./scripts/Controllers/windowScroll.js"></script>
 </html>

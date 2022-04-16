@@ -1,0 +1,40 @@
+
+.matrizes__cartoes_paginacao {
+    background-color: #222;
+    box-shadow: 0 0 1em rgba(#000, .25);
+    display: block;
+    bottom: 0;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: .5em;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform var(--animation-duration);
+    z-index: 2;
+}
+
+.matrizes__cartoes_paginacao--inativo {
+    transform: translateY(100%);
+  }
+
+.matrizes__cartoes_paginacao__item {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.matrizes__cartoes_paginacao__link {
+    color: #888;
+    text-decoration: none;
+}
+
+.matrizes__cartoes_paginacao__link:hover, .matrizes__cartoes_paginacao__link:focus {
+      color: lighten(#888, 15%);
+    }
+
+.matrizes__cartoes_paginacao__link:active {
+      color: lighten(#888, 30%);
+}
+
