@@ -18,18 +18,36 @@
     display: flex;
     justify-content: center;
   }
-  
+
+/* .matrizes__paginacao__lista__item{
+    background-color: cadetblue;
+} 
+
+.matrizes__paginacao__lista__item-ativo {
+    background-color: aquamarine;
+}
+   */
 .matrizes__paginacao__lista__pagina {
-      color: black;
+    background-color: blueviolet;
+      color: rgb(0, 122, 155);
       float: left;
       padding: 8px 16px;
       text-decoration: none;
     }
+
+.matrizes__paginacao__lista__pagina-active {
+        background-color: green;
+          color: rgb(0, 122, 155);
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+        }    
     
-.matrizes__paginacao__lista__pagina-ativo {
-        background-color: blue;
-        color: white;
-    }
-    
-.matrizes__paginacao__lista__pagina:hover:not(.active) {
-        background-color: #ddd;}  
+/* .matrizes__paginacao__lista__pagina:hover:not(.active) {
+        background-color: #ddd;
+    }   */
+/* 
+.matrizes__paginacao__lista__pagina:ac{
+            background-color: blue;
+            color: white;
+        }         */

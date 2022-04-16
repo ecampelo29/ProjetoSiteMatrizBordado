@@ -74,10 +74,13 @@ const numeracaoPaginas = (totalPaginas) =>{
 
     for (let i = 1; i <= totalPaginas; i++) {        
         const listaPag = document.createElement('li')
+        listaPag.className = 'matrizes__paginacao__lista__item';
         listaPag.onclick = function() {
+            this.lastElementChild.className = 'matrizes__paginacao__lista__pagina-active'
+            console.log(this.lastElementChild.className)
             renderizaCartoes(this.dataset.id)
         }
-        listaPag.innerHTML = `<a class="matrizes__paginacao__lista__pagina">${i}</a>`
+        listaPag.innerHTML = `<a class="matrizes__paginacao__lista__pagina" >${i}</a>`
         listaPag.dataset.id= i;
         paginacao.insertBefore(listaPag, raquo)        
     }
