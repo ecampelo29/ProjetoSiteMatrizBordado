@@ -2,6 +2,7 @@
 
 import { novaPagina } from "./novaPagina.js";
 let pagina = 0;
+globalThis.qtdPaginas = 0;
 
 function getDocumentHeight() {
     const body = document.body;
@@ -21,7 +22,7 @@ novaPagina(++pagina)
 
 window.onscroll = function() {
     let limitePagina = getDocumentHeight() - window.innerHeight - 50
-    if (getScrollTop() < limitePagina) return;    
+    if (getScrollTop() < limitePagina || pagina >= window.qtdPaginas) return;    
     novaPagina(++pagina)
 
   };
