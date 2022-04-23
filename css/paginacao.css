@@ -1,40 +1,73 @@
-
-.matrizes__cartoes_paginacao {
-    background-color: #222;
-    box-shadow: 0 0 1em rgba(#000, .25);
-    display: block;
-    bottom: 0;
-    left: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: .5em;
-    position: fixed;
-    right: 0;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform var(--animation-duration);
-    z-index: 2;
+.matrizes__paginacao{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.carrega_pagina {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border : none;
+    border-radius: 5px;
+    height: 50px;
+    width: 9rem;
 }
 
-.matrizes__cartoes_paginacao--inativo {
-    transform: translateY(100%);
-  }
-
-.matrizes__cartoes_paginacao__item {
-    display: inline-block;
-    margin: 0 1em;
+.carrega_pagina--inativo {
+    display: none;
 }
 
-.matrizes__cartoes_paginacao__link {
-    color: #888;
-    text-decoration: none;
+.carrega_pagina:hover {
+    background-color: var(--tom-cor-dois);
 }
 
-.matrizes__cartoes_paginacao__link:hover, .matrizes__cartoes_paginacao__link:focus {
-      color: lighten(#888, 15%);
+.matrizes__nr_paginacao {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .matrizes__nr_paginacao {
+        background-color: var(--tom-cor-quatro);
+        border-radius: 0 5px 5px 0;
+        box-shadow: 0 0 1em rgba(#000, .25);
+        display:flex;
+        flex-flow: column;
+        bottom: 30%;
+        left: 8px;
+        right: 93%;
+        list-style-type: none;
+        margin: 0;
+        position: fixed;
+        text-align: center;
+        transform: translateX(0);
+        transition: transform var(--animation-duration);
+        z-index: 2;
+        width:20px;
     }
 
-.matrizes__cartoes_paginacao__link:active {
-      color: lighten(#888, 30%);
-}
+    .matrizes__nr_paginacao--inativo {
+        transform: translateX(-930%);
+        /* display: none; */
+        /* transform: translateY(100%); */
+    }
 
+    .matrizes__nr_paginacao__item {        
+        margin: 0.5rem 0.2rem;
+    }
+
+    .matrizes__nr_paginacao__link {
+        color: var(--cor-font-oficial);
+        font-family: var(--font-oficial);
+        text-decoration: none;
+    }
+
+    .matrizes__nr_paginacao__link:hover, .matrizes__nr_paginacao__link:focus {
+        color: lighten(#888, 15%);
+        }
+
+    .matrizes__nr_paginacao__link:active {
+        color: lighten(#888, 30%);
+    }
+
+}

@@ -2,7 +2,15 @@
 .rodape {
     background-color: var(--tom-cor-cinco);;
     font-family: var(--font-oficial); 
-    color: var(--cor-font-oficial);   
+    color: var(--cor-font-oficial);
+}
+
+.rodape--fixado{
+    position: fixed;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    z-index: 2;
 }
 
 .rodape__ofertas {

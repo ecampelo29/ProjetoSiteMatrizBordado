@@ -72,6 +72,4 @@ export const novaPagina =  (pagina)=> {
     }).catch(function(erro){
         console.log('Página não foi criada: ', erro)
     })
-    return pagina
-
 }

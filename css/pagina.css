@@ -1,20 +1,23 @@
 
 .matrizes__pagina {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--tom-cor-quatro);
     clear: both;
     counter-increment: page;
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
+    padding: 0.5rem 0rem;
     position: relative;
+    font-family: var(--font-oficial);
 }        
 .matrizes__pagina:before {
-    background-color: #ddd;
+    background-color: var(--tom-cor-dois);
+    border-radius: 3px;
     display: inline-block;
     content: counter(page);
-    color: #888;
+    color: var(--cor-font-oficial);
     padding: .25em .5em;
     position: absolute;
     left: calc(50% - .75em);
-    top: -.75em;
+    top: -0.75em;
     vertical-align: middle;
     z-index: 1;
 }
