@@ -4,7 +4,9 @@ import { criaNovoCartao } from "./criaCartao.js";
 import { paginacao } from "./nrPagina.js";
 
 const listagemDeCartoes = document.getElementById('listagemDeCartoes');
-const cartoesPorPagina = 12;
+let pagina = 0;
+globalThis.qtdPaginas = 0;
+const cartoesPorPagina = 2;
 
 
 function totalPaginas(totalRegistros){ 
@@ -65,7 +67,7 @@ const renderizaPagina = (pagina) => {
 };
 
 
-export const novaPagina =  (pagina)=> {
+const novaPagina =  (pagina)=> {
     const render = renderizaPagina(pagina);
     render.then (function () {
         paginacao.adicionaNrPagina(pagina);
@@ -73,3 +75,14 @@ export const novaPagina =  (pagina)=> {
         console.log('Página não foi criada: ', erro)
     })
 }
+
+
+novaPagina(++pagina)
+
+const botaoAdicionaPagina = document.getElementById("carregaPagina");
+
+botaoAdicionaPagina.onclick = (function(){
+  if (pagina >= window.qtdPaginas) return; 
+  if (pagina+1 >= window.qtdPaginas) this.classList.add("carrega_pagina--inativo");     
+  novaPagina(++pagina)
+})

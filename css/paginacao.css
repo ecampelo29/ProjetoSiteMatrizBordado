@@ -33,6 +33,7 @@
         box-shadow: 0 0 1em rgba(#000, .25);
         display:flex;
         flex-flow: column;
+        font-size: 0.8rem;
         bottom: 30%;
         left: 8px;
         right: 93%;
@@ -43,7 +44,7 @@
         transform: translateX(0);
         transition: transform var(--animation-duration);
         z-index: 2;
-        width:20px;
+        width:22px;
     }
 
     .matrizes__nr_paginacao--inativo {
