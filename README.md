@@ -29,3 +29,7 @@ Hora de fixar tudo o que foi visto nos cursos sobre o assunto.
 
 ![image](https://user-images.githubusercontent.com/63076222/160249028-259228ec-c11c-4764-944b-ea4bf0d969a8.png)
 
+Paginação que é aplicada para as visualizações acima de 768px
+
+![image](https://user-images.githubusercontent.com/63076222/168425473-8e9121cd-800d-4d21-90be-a91d37b1d856.png)
+
