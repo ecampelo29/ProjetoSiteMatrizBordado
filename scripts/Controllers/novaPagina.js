@@ -6,7 +6,7 @@ import { paginacao } from "./nrPagina.js";
 const listagemDeCartoes = document.getElementById('listagemDeCartoes');
 let pagina = 0;
 globalThis.qtdPaginas = 0;
-const cartoesPorPagina = 2;
+const cartoesPorPagina = 12;
 
 
 function totalPaginas(totalRegistros){ 
@@ -37,7 +37,7 @@ function criaPagina (pagina){
 
 const populaPagina = async (pagina, listaDeCartoes) => { 
     try {
-         const listarMatrizes = await matrizService.listaMatrizes()
+         const listarMatrizes = await matrizService.listarMatrizes()
 
          for(let i = (pagina -1) * cartoesPorPagina; i < (pagina * cartoesPorPagina) && i < listarMatrizes.length; i++){            
              const matriz = listarMatrizes[i]

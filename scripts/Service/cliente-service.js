@@ -1,7 +1,7 @@
 
 
 // GET
-const listaMatrizes  =() => {
+const listarMatrizes  =() => {
     return fetch ('http://localhost:3300/matrizes')
     .then( resposta => {
         if(resposta.ok){
@@ -13,6 +13,6 @@ const listaMatrizes  =() => {
 
 
 export const matrizService = {
-    listaMatrizes
+    listarMatrizes
 } 
 

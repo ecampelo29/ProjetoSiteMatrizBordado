@@ -15,7 +15,6 @@ function adicionaNrPagina(pagina) {
     itemLista.innerHTML = Listalink;  
 
     itemLista.onclick = function(){
-      console.log("clikado no link", this.innerText)
       gerenciaNrPaginas(Number(this.innerText))
     }
     // incrementa array de páginas
