@@ -1,0 +1,17 @@
+.menu {
+  background-color: var(--tom-cor-quatro);
+  display: none;
+  flex-flow: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  overflow: auto;
+}
+
+.menu a {
+    color: white;
+    font-family: var(--font-oficial);
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+}

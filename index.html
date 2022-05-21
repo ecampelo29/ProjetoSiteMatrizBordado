@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/body.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/menus.css">
     <link rel="stylesheet" href="./css/cartoes.css">
     <link rel="stylesheet" href="./css/pagina.css">
     <link rel="stylesheet" href="./css/paginacao.css">
@@ -37,18 +38,19 @@
                 </div>
             </section>
         </div>
-        <nav class="cabecalho__nav container">
-            <ul class="cabecalho__menu">
+        <nav class="cabecalho__nav container" id="menuGeral">
+            <ul class="cabecalho__menu" id="linksMenu">
                 <li><a class="cabecalho__menu_link" href="#">Pedidos</a></li>
                 <li><a class="cabecalho__menu_link" href="#">Novidades</a></li>
-                <li><a class="cabecalho__menu_link" href="#">Categorias</a></li>
+                <li><a class="cabecalho__menu_link" id="menuCategorias" href="#">Categorias</a></li>
                 <li><a class="cabecalho__menu_link" href="#">Gratis</a></li>
             </ul>
+           
         </nav>
     </header>
     <main class="matrizes container">
         <section id="listagemDeCartoes" >
-            <!--matrizes serão populadas automaticamente no futuro
+            <!--matrizes populadas automaticamente 
             <ul class="matrizes__cartoes" data-cartoes>
                
                    cartões são inseridos automaticamente
@@ -102,4 +104,5 @@
 </body>
 <script type="module" src="./scripts/Controllers/listaMatrizes.js"></script>
 <script type="module" src="./scripts/Controllers/novaPagina.js"></script>
+<script type="module" src="./scripts/Controllers/menus.js"></script>
 </html>

@@ -24,3 +24,16 @@ app.get('/matrizes', (req, res)=> {
     
 })
 
+// método que publica as categorias disponíveis no banco 
+app.get('/categorias', (req, res)=> {
+    client.query(`select distinct category from designs;`, (err, result)=>{
+        if(!err){
+            res.send(result.rows);
+        } else {
+            console.log("Erro: " + err.message);
+        }
+        client.end;
+    });
+    
+})
+
